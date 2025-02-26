@@ -1,15 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import I18 from './lang/i18';
+import { getLocalStore } from './helpers/helper';
+import { localDefalult } from './lang';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <I18>
+       {(handleChangeCode) => <App handleChangeCode={handleChangeCode}/>}
+    </I18>
   </React.StrictMode>
 );
 

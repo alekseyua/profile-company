@@ -1,0 +1,30 @@
+:root {
+    --bgc-body: #ffffff;
+    --g-max-width: 1200px;
+    --font-family:Arial, sans-serif;
+    --gutter-left: 10px;
+    --gutter-right: 10px;
+    --text-color-main: #000000;
+    --text-color: #645D5D;
+    --text-color-white: #ffffff;
+    --text-color-red: #ff0000;
+    --bgc-fone: #000000;
+    --bgc-header: #151515;
+    --bgc-footer: #111111;
+    --bgc-hover: #444444;
+    --text-hover: #cccccc;
+    --bgc-active: #555555;
+    --text-active: #ffffff;
+    --border-color: #cccccc;
+    --border-radius: 10px;
+    --transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background-color: var(--bgc-body);
+    color: var(--text-color-main);
+    font-family: var(--font-family);
+    line-height: 1.6;
+    transition: var(--transition);
+    margin: 0 auto;
+}

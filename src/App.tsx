@@ -1,25 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router";
+import { router } from "./routers/router";
+import { createContext } from "react";
 
-function App() {
+
+export const LangContext = createContext < { handleChangeCode: (code: string) => void } | null >(null);
+
+interface IApp{
+  handleChangeCode: (code: string) => void;
+}
+
+const App:React.FC<IApp> = ({ ...props }: IApp) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LangContext.Provider value={{ handleChangeCode: props.handleChangeCode }}>
+      <RouterProvider router={router}/>
+    </LangContext.Provider>
   );
 }
 
