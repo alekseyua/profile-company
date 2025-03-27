@@ -1,0 +1,25 @@
+.button{
+    //button__container
+    &__container{
+        display: flex;
+        
+    }
+    //button__btn
+    &__btn{
+        font-weight: normal;
+        font-family: Tenor Sans;
+        color: var(--color-text-light);
+    }    
+}
+
+.transparent {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.border {
+    border: 2px solid var(--border-color);
+}

@@ -1,0 +1,74 @@
+.service{
+    //service__container
+    &__container{
+        position: relative;
+        width: 100%;
+        padding: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        // service__container-wrap
+        &-wrap{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 22px;
+        }
+    }
+    &__item{
+        //service__item-container
+        &-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            max-width: 380px;
+            padding: 60px 40px;
+        }
+        //service__item-header
+        &-header{
+            flex: 0 0 150px;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 89%;
+        }        
+        //service__item-description
+        &-description{
+            flex: 1 1 auto;
+            font-size: 16px;
+            color: var(--color-text-light);
+            line-height: 1.9;
+            min-height: 150px;
+            font-family: Montserrat;
+            font-weight: normal;
+            color: var(--text-color-desc);
+        }
+        //service__item-footer
+        &-footer{
+            flex: 0 0 50px;
+            font-size: 16px;
+            width: 100%;
+            background-color: var(--color-primary);
+            color: var(--color-text-light);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //service__item-footer-btn
+            &-btn{
+                padding: 10px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                background-color: var(--color-primary);
+                color: var(--color-text-light);
+            }
+        }
+    }
+}

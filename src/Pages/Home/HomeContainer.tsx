@@ -1,10 +1,14 @@
 import React from 'react'
-import Home from './Home'
+import PreviewMainSection from './Sections/PreviewMainSection'
+import ServiceMainSectionContainer from './Sections/ServiceMainSectionContainer'
 
 
 const HomeContainer = () => {
     return (
-    <Home />
+      <React.Fragment>
+        <PreviewMainSection />
+        <ServiceMainSectionContainer />
+      </React.Fragment>
   )
 }
 

@@ -20,25 +20,25 @@ const LangContainer: React.FC<LangContainer> = ({ }: LangContainer) => {
       id: 0,
       title: 'en',
       active: true,
-      code: 'en- Us',
+      code: 'en-Us',
     },
     {
       id: 1,
       title: 'ru',
       active: false,
-      code:'ru - Ru',
+      code:'ru-Ru',
     },
     {
       id: 2,
       title: 'ua',
       active: false,
-      code:'ua - Ua',
+      code:'ua-Ua',
     },
     {
       id: 3,
       title: 'pl',
       active: false,
-      code:'pl - Pl',
+      code:'pl-Pl',
     },
   ]);
 

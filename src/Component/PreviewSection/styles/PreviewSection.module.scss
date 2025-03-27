@@ -1,24 +1,43 @@
-.home{
-    //home__container
+.preview-section{
+    //preview-section__container
     &__container{
       display: flex;
       flex-direction: column;      
 
     }
-    // home__section-getting-to-know
+    // preview-section__section-getting-to-know
     &__section-getting-to-know{
 
       display: flex;
       justify-content: flex-end;
       background-color: var(--bgc-fone);
-      //home__section-getting-to-know-wrap
+      //preview-section__section-getting-to-know-controller
+      &-controller{
+        position: relative;
+        min-width: 320px;
+        margin-top: 15px;
+        //preview-section__section-getting-to-know-controller-buttons
+        &-buttons{
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          padding: 20px 10px;
+          background-color: var(--text-color-red);
+          font-size: 16px;
+          letter-spacing: 5%;
+          color: var(--text-color-white);
+        }
+      }
+      //preview-section__section-getting-to-know-wrap
       &-wrap{
         position: relative;
         max-width: var(--g-max-width);
         margin: 0 auto;
         display: flex;
       }
-      // home__section-getting-to-know-text
+      // preview-section__section-getting-to-know-text
       &-text{
         position: absolute;
         top: 50%;
@@ -27,7 +46,7 @@
         color: #ffffff;
         text-align: start;
         max-width: 420px;
-        //home__section-getting-to-know-text-title
+        //preview-section__section-getting-to-know-text-title
         &-title{
           font-size: 60px;
           font-weight: bold;
@@ -40,12 +59,12 @@
           }
           margin-bottom: 50px;
         }
-        //home__section-getting-to-know-text-subtitle
+        //preview-section__section-getting-to-know-text-subtitle
         &-subtitle{
           font-size: 18px;
         }
       }
-      // home__section-getting-to-know-image
+      // preview-section__section-getting-to-know-image
       &-image{
         padding-left: var(--gutter-left);
         max-width: var(--g-max-width);
@@ -58,10 +77,10 @@
       }
     }
 
-    // home__section-about-us
+    // preview-section__section-about-us
     &__section-about-us{
       flex-basis: 50%;
-      // home__section-about-us__text
+      // preview-section__section-about-us__text
       &__text{
         padding: 20px;
         background-color: #666666;
